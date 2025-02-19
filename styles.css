@@ -1,0 +1,380 @@
+:root {
+    --primary: #cfb02c;
+    --secondary: #707070;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+body{
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.logo {
+    /*width: 25%;*/
+    text-align: center;
+    left: 50%;
+    gap: 24px;
+}
+
+.logo img {
+    width: 250px;
+    height: auto;
+}
+
+
+.menu-links {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    font-size: 20px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.customer-section {
+    display: flex;
+    width: 25%;
+    gap: 24px;
+}
+
+.customer-section img {
+    cursor: pointer;
+}
+
+.btn {
+    border-radius: 24px;
+    background: var(--primary);
+    border: none;
+    padding: 16px;
+    width: 70%;
+    height: 75%;
+    font-size: 16px;
+    color: var(--white);
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn:hover {
+    color: var(--white);
+    background-color: var(--secondary);
+}
+
+/** oddělení **/
+
+.shop-text {
+    text-align: center;
+    padding: 32px;
+}
+
+.shop-text h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.shop-text h2 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.category {
+    position: relative;
+    left: 22%;
+    border: none;
+}
+
+select {
+    width: 230px;
+    height: 50px;
+    font-size: 18px;
+}
+
+/** Nakupování **/
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 128px;
+    padding: 20px;
+    text-align: center;
+}
+
+.products h2 {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.prices {
+    display: flex;
+    justify-content: center;
+    height: 22px;
+    margin: 19px 0;
+    gap: 20px;
+}
+
+.prices h3 {
+    margin: 0;
+    font-size: 22px;
+    color: var(--secondary);
+}
+
+.prices-deform {
+    text-decoration: line-through;
+    font-weight: normal;
+}
+
+.btn1 {
+    background: var(--white);
+    border: 2px solid var(--primary);
+    width: 60%;
+    height: 9%;
+    font-size: 16px;
+    border-radius: 50px 0 50px 0;
+    cursor: pointer;
+}
+
+.btn1:hover {
+    background: var(--primary);
+
+}
+
+.products-2 {
+    display: flex;
+    justify-content: center;
+    gap: 128px;
+    padding: 80px;
+    text-align: center;
+}
+
+.products-2 h2 {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+/* Sekce knížka */
+
+.contact {
+    display: flex;
+    justify-content: center;
+    background-color: #344742;
+    width: 100%;
+    height: 100%;
+    gap: 128px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #ededed;
+}
+
+.contact h2 {
+    font-weight: bold;
+    font-size: 36px;
+    padding-bottom: 5px;
+}
+
+.contact h3 {
+    font-weight: normal;
+    padding-bottom: 5px;
+}
+
+.contact-section {
+    display: flex;
+}
+
+.contact input {
+    height: 15%;
+    width: 50%;
+    border-radius: 25px;
+    font-size: 20px;
+}
+
+.btn2 {
+    height: 15%;
+    width: 40%;
+    border-radius: 25px;
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn2:hover {
+    background: var(--secondary);
+    color: var(--primary);
+}
+
+/* dolní část */
+
+.last-menu {
+    display: flex;
+    background-color: #293330;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    gap: 10%;
+}
+
+.logo2 img {
+    width: 250px;
+    height: auto;
+    margin: 30px;
+}
+
+.icons {
+    margin: 30px;
+    font-size: 30px;
+    gap: 100px;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.last-items h2 {
+    font-weight: bold;
+    color: var(--white);
+    font-size: 40px;
+}
+
+.last-items h3 {
+    font-weight: normal;
+    font-size: 22px;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.last-items h3:hover {
+    text-decoration: underline;
+}
+
+.last-items label {
+    display: block;
+    color: var(--white);
+    font-size: 26px;
+}
+
+.last-items input {
+    height: 15%;
+    width: 80%;
+    border-radius: 25px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 780px){
+    .main-menu {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .btn {
+        padding: 12px;
+        width: 180px;
+    }
+
+    .products {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .products button {
+        padding: 8px;
+        width: 30%;
+    }
+
+    .products-2 button {
+        padding: 8px;
+        width: 169px;
+    }
+
+    .customer-section {
+        text-align: center;
+        gap: 128px;
+    }
+
+    .products-2 {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contact {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .free-ebook {
+        margin-top: -10%;
+    }
+
+    .contact img {
+        margin: auto;
+        width: 300px;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        margin-top: 10%;
+        align-items: center;
+    }
+
+    .contact-section button {
+        margin-top: 5%;
+    }
+
+    .contact input {
+        padding: 10px;
+    }
+
+    .contact button {
+        padding: 10px;
+        width: 324px;
+    }
+
+    .logo2 img {
+        margin: 0;
+        padding-top: 30px;
+    }
+
+    .icons {
+        margin: 0;
+        padding-top: 30px;
+    }
+
+    .last-menu {
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 50px;
+    }
+
+    .last-items {
+        margin-bottom: 5%;
+    }
+
+    .last-items input {
+        padding: 10px;
+    }
+
+    .last-items input {
+        width: 465px;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .last-items button {
+        width: 487px;
+        padding: 10px;
+        align-items: center;
+    }
+}
+
